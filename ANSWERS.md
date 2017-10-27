@@ -9,7 +9,7 @@ Slizha
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 I passed in trainer_path, which needed the pokemon's id.
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
-
+Flash errors are built in to display at the top of every page and the validation fills in the errors when called, so this sets the flash message to those errors.
 # Give us feedback on the project and decal below!
 
 # Extra credit: Link your Heroku deployed app

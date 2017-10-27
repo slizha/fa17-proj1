@@ -27,7 +27,7 @@ def create
     @pokemon.save
     redirect_to trainer_path(current_trainer)
   else
-    @pokemon.errors.messages
+    flash[:error] = @pokemon.errors.full_messages.to_sentence
     redirect_to pokemons_path
   end
 end
